@@ -1,0 +1,48 @@
+{
+  "name": "fp-ts_tut",
+  "version": "1.0.0",
+  "description": "fp-ts tutorial and practice",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "dev": "nodemon src/index.ts",
+    "prestart": "yarn fix",
+    "start": "yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishabh-sonal/fp-ts_Tut.git"
+  },
+  "keywords": [
+    "fp-ts",
+    "functional",
+    "programming",
+    "JS",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "rishabh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishabh-sonal/fp-ts_Tut/issues"
+  },
+  "homepage": "https://github.com/rishabh-sonal/fp-ts_Tut#readme",
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.1",
+    "typescript": "~4.7.0"
+  },
+  "dependencies": {
+    "fp-ts": "^2.13.1",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1"
+  }
+}
